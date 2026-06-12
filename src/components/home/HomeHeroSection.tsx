@@ -14,7 +14,7 @@ const capabilities = [
   { icon: Database, label: "SAP Business Data Cloud" },
   { icon: Bot, label: "Agentic AI" },
   { icon: BarChart3, label: "Microsoft Fabric Analytics" },
-  { icon: Cpu, label: "IOT Manufacturing Excellence" },
+  { icon: Cpu, label: "IOT Manuf. Excellence" },
   { icon: Shield, label: "Splunk IT Infra & Security" },
 ];
 
