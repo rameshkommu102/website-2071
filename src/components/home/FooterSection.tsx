@@ -110,7 +110,7 @@ const FooterSection = () => {
           <div className="col-span-1 lg:col-span-1">
             <h4 className="text-[13px] font-normal text-white mb-3">INDIA</h4>
             <address className="not-italic space-y-0.5 text-[11px] font-light text-white/70 leading-relaxed">
-              <p>Carbynetech India Pvt Ltd</p>
+              <p>Carbynetech India Private Limited</p>
               <p>5th Floor, Wing 1B</p>
               <p>Block A, Cyber Gateway</p>
               <p>HITEC City, Hyderabad</p>
