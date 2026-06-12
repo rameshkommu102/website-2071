@@ -58,7 +58,7 @@ const HomeHeroSection = () => {
 
         <div className="w-full max-w-[1200px] xl:max-w-[1440px] 2xl:max-w-[1720px] [@media(min-width:1980px)]:max-w-[1840px] mx-auto px-5 sm:px-8 md:px-14 lg:px-20 xl:px-32 2xl:px-20">
           <div className="rounded-2xl px-3 sm:px-8 lg:px-5 py-3 sm:py-4 backdrop-blur-sm" style={{ background: 'rgb(255 255 255 / 0.02)' }}>
-            <div className="grid grid-cols-2 sm:flex sm:flex-nowrap items-center justify-items-start sm:justify-between gap-x-3 gap-y-3 sm:gap-x-6 lg:gap-x-8">
+            <div className="grid grid-cols-2 sm:flex sm:flex-nowrap items-center justify-items-start sm:justify-between gap-x-3 gap-y-3 sm:gap-0">
               {capabilities.map(({ icon: Icon, label }) => (
                 <a
                   key={label}
