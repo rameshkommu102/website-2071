@@ -481,8 +481,8 @@ const TestimonialsSection = () => {
       keyResultLabel: "FASTER SCHEDULING",
       watermark: "18× Faster",
       quote: "Carbynetech cut our scheduling cycle from 3 days to 4 hours. The team couldn't believe the transformation.",
-      name: "Rajesh Menon",
-      role: "VP Operations · Tata Steel",
+      name: "VP Operations",
+      role: "Leading Steel Manufacturer",
     },
     {
       bg: "#EEECE8",
@@ -492,8 +492,8 @@ const TestimonialsSection = () => {
       keyResultLabel: "ON-TIME DELIVERY",
       watermark: "96× On Time",
       quote: "We went from 72% OTD to 96% in just one quarter. Our customers noticed the difference immediately.",
-      name: "Priya Sharma",
-      role: "Supply Chain Director · Mahindra Manufacturing",
+      name: "Supply Chain Director",
+      role: "Automotive Manufacturer",
     },
     {
       bg: "#1F2228",
@@ -503,8 +503,8 @@ const TestimonialsSection = () => {
       keyResultLabel: "COST REDUCTION",
       watermark: "34× Cost",
       quote: "The AI solver doesn't just optimize — it thinks three steps ahead. It's like having a scheduling genius on staff.",
-      name: "Arjun Patel",
-      role: "Plant Manager · Reliance Industries",
+      name: "Plant Manager",
+      role: "Process Industry",
     },
   ];
   return (
