@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import insightBg from "@/assets/insight-bg-main.jpg";
-import imgProcurement from "@/assets/insights/Insight2-new.png.asset.json";
-import imgPharma from "@/assets/insights/Insight3-new.png.asset.json";
-import imgAnimalNutrition from "@/assets/insights/Insight4-new.png.asset.json";
+import imgProcurement from "@/assets/insights/Insight2-new.png";
+import imgPharma from "@/assets/insights/Insight3-new.png";
+import imgAnimalNutrition from "@/assets/insights/Insight4-new.png";
 import ScrollReveal from "@/components/ewm/ScrollReveal";
 
 const SLIDE_DURATION = 6000; // ms per card
@@ -22,7 +22,7 @@ const slides = [
     ],
   },
   {
-    image: imgProcurement.url,
+    image: imgProcurement,
     slug: "procurement-logistics-intelligence",
     category: "CASE STUDY  |  PROCUREMENT & LOGISTICS",
     title: "Procurement & Logistics",
@@ -35,7 +35,7 @@ const slides = [
     ],
   },
   {
-    image: imgPharma.url,
+    image: imgPharma,
     slug: "enterprise-analytics-pharma",
     category: "CASE STUDY  |  PHARMA OPERATIONS",
     title: "Enterprise Analytics",
@@ -48,7 +48,7 @@ const slides = [
     ],
   },
   {
-    image: imgAnimalNutrition.url,
+    image: imgAnimalNutrition,
     slug: "sap-analytics-animal-nutrition",
     category: "CASE STUDY  |  ANIMAL NUTRITION",
     title: "Unifying SAP-driven Analytics for a Leader",
