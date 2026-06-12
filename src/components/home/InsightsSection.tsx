@@ -22,7 +22,7 @@ const slides = [
     ],
   },
   {
-    image: imgProcurement.url,
+    image: imgProcurement,
     slug: "procurement-logistics-intelligence",
     category: "CASE STUDY  |  PROCUREMENT & LOGISTICS",
     title: "Procurement & Logistics",
@@ -35,7 +35,7 @@ const slides = [
     ],
   },
   {
-    image: imgPharma.url,
+    image: imgPharma,
     slug: "enterprise-analytics-pharma",
     category: "CASE STUDY  |  PHARMA OPERATIONS",
     title: "Enterprise Analytics",
@@ -48,7 +48,7 @@ const slides = [
     ],
   },
   {
-    image: imgAnimalNutrition.url,
+    image: imgAnimalNutrition,
     slug: "sap-analytics-animal-nutrition",
     category: "CASE STUDY  |  ANIMAL NUTRITION",
     title: "Unifying SAP-driven Analytics for a Leader",
