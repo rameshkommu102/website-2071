@@ -58,14 +58,14 @@ const HomeHeroSection = () => {
 
         <div className="w-full max-w-[1200px] xl:max-w-[1440px] 2xl:max-w-[1720px] [@media(min-width:1980px)]:max-w-[1840px] mx-auto px-5 sm:px-8 md:px-14 lg:px-20 xl:px-32 2xl:px-20">
           <div className="rounded-2xl px-3 sm:px-8 lg:px-5 py-3 sm:py-4 backdrop-blur-sm" style={{ background: 'rgb(255 255 255 / 0.02)' }}>
-            <div className="grid grid-cols-2 sm:flex sm:flex-nowrap items-center justify-items-start sm:justify-between gap-x-3 gap-y-3 sm:gap-0">
+            <div className="grid grid-cols-2 sm:flex sm:flex-nowrap items-center justify-items-start sm:justify-center gap-x-3 gap-y-3 sm:gap-x-3 md:gap-x-4 lg:gap-x-4 xl:gap-x-5 2xl:gap-x-8">
               {capabilities.map(({ icon: Icon, label }) => (
                 <a
                   key={label}
                   href="#"
-                  className="flex items-center gap-2 sm:gap-1 xl:gap-1.5 2xl:gap-2.5 whitespace-nowrap text-[12px] sm:text-[11px] md:text-[12px] lg:text-[11px] xl:text-[14px] 2xl:text-[15px] text-foreground/80 transition-colors hover:text-foreground"
+                  className="flex items-center gap-2 sm:gap-1 xl:gap-1 2xl:gap-2.5 whitespace-nowrap text-[12px] sm:text-[11px] md:text-[12px] lg:text-[11px] xl:text-[12px] 2xl:text-[15px] text-foreground/80 transition-colors hover:text-foreground"
                 >
-                  <Icon className="h-[18px] w-[18px] sm:h-[18px] sm:w-[18px] md:h-[20px] md:w-[20px] xl:h-[22px] xl:w-[22px] 2xl:h-[24px] 2xl:w-[24px] shrink-0 opacity-75" strokeWidth={1.4} />
+                  <Icon className="h-[18px] w-[18px] sm:h-[18px] sm:w-[18px] md:h-[20px] md:w-[20px] xl:h-[20px] xl:w-[20px] 2xl:h-[24px] 2xl:w-[24px] shrink-0 opacity-75" strokeWidth={1.4} />
                   <span className="hidden sm:inline">{label}</span>
                   <span className="sm:hidden">{label.split(' ').slice(0, 2).join(' ')}</span>
                 </a>
