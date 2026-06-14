@@ -31,6 +31,13 @@ const HeroSection = () => (
           "linear-gradient(90deg, rgba(6,6,4,0.92) 0%, rgba(6,6,4,0.65) 45%, rgba(6,6,4,0.25) 100%)",
       }}
     />
+    <div
+      className="absolute bottom-0 left-0 right-0 h-24"
+      style={{
+        background:
+          "linear-gradient(to top, #060604 0%, rgba(6,6,4,0.7) 40%, transparent 100%)",
+      }}
+    />
     <div className="relative z-10 mx-auto w-full max-w-[1200px] xl:max-w-[1440px] 2xl:max-w-[1720px] [@media(min-width:1920px)]:max-w-[1840px] px-5 sm:px-8 md:px-14 lg:px-20 xl:px-32 2xl:px-20 pt-32 sm:pt-36 pb-20">
       <motion.div
         initial={{ opacity: 0, y: 14 }}
