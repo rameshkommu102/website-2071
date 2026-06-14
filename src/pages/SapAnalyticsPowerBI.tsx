@@ -15,6 +15,12 @@ import heroBg from "@/assets/sap-analytics-hero-bg.png";
 import architectureDiagram from "@/assets/sap-architecture-diagram.png";
 import claudeChat from "@/assets/claude-ai-prompt.mp4";
 import boardroomDashboard from "@/assets/sap-boardroom-dashboard.png";
+import powerbiCard1 from "@/assets/powerbi-cards/card-1.png";
+import powerbiCard2 from "@/assets/powerbi-cards/card-2.png";
+import powerbiCard3 from "@/assets/powerbi-cards/card-3.png";
+import powerbiCard4 from "@/assets/powerbi-cards/card-4.png";
+import powerbiCard5 from "@/assets/powerbi-cards/card-5.png";
+const powerbiCardImages = [powerbiCard1, powerbiCard2, powerbiCard3, powerbiCard4, powerbiCard5];
 
 const LIME = "#C8FF01";
 const GREEN_BORDER = "rgba(200,255,1,0.25)";
