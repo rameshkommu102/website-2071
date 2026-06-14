@@ -236,10 +236,11 @@ const ClosesItselfSection = () => {
   return (
     <section className="py-12 sm:py-14 md:py-16 relative overflow-hidden" style={{ background: PURPLE_BG }}>
       <div
-        className="absolute inset-0 opacity-[0.10]"
+        className="absolute inset-0 opacity-[0.06]"
         style={{
-          backgroundImage: `linear-gradient(rgba(255,255,255,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.4) 1px, transparent 1px)`,
+          backgroundImage: `linear-gradient(rgba(255,255,255,0.25) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.25) 1px, transparent 1px)`,
           backgroundSize: "18px 18px",
+          filter: "blur(0.8px)",
         }}
       />
       <div className="relative z-10 mx-auto max-w-[1200px] xl:max-w-[1440px] 2xl:max-w-[1720px] [@media(min-width:1920px)]:max-w-[1840px] px-5 sm:px-8 md:px-14 lg:px-20 xl:px-32 2xl:px-20">
