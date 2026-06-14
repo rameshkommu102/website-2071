@@ -15,6 +15,12 @@ import heroBg from "@/assets/sap-analytics-hero-bg.png";
 import architectureDiagram from "@/assets/sap-architecture-diagram.png";
 import claudeChat from "@/assets/claude-ai-prompt.mp4";
 import boardroomDashboard from "@/assets/sap-boardroom-dashboard.png";
+import powerbiCard1 from "@/assets/powerbi-cards/card-1.png";
+import powerbiCard2 from "@/assets/powerbi-cards/card-2.png";
+import powerbiCard3 from "@/assets/powerbi-cards/card-3.png";
+import powerbiCard4 from "@/assets/powerbi-cards/card-4.png";
+import powerbiCard5 from "@/assets/powerbi-cards/card-5.png";
+const powerbiCardImages = [powerbiCard1, powerbiCard2, powerbiCard3, powerbiCard4, powerbiCard5];
 
 const LIME = "#C8FF01";
 const GREEN_BORDER = "rgba(200,255,1,0.25)";
@@ -409,14 +415,10 @@ const BoardroomSection = () => {
               <div
                 className="absolute inset-0"
                 style={{
-                  backgroundImage: `url(${boardroomDashboard})`,
+                  backgroundImage: `url(${powerbiCardImages[i]})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
-              />
-              <div
-                className="absolute inset-0"
-                style={{ background: "linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.6) 60%, rgba(0,0,0,0.9) 100%)" }}
               />
               <div className="relative z-10 h-full w-full flex flex-col justify-end p-5">
                 <div className="flex items-center gap-2 mb-3 text-[11px] font-medium tracking-wider uppercase" style={{ color: YELLOW }}>
@@ -466,24 +468,14 @@ const BoardroomSection = () => {
                 }}
                 aria-expanded={isOpen}
               >
-                {/* Background image */}
+                {/* Background image — image already has its own dark shade, no overlay */}
                 <div
                   className="absolute inset-0 transition-opacity duration-700"
                   style={{
-                    backgroundImage: `url(${boardroomDashboard})`,
+                    backgroundImage: `url(${powerbiCardImages[i]})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
-                    opacity: isOpen ? 1 : 0.55,
-                    filter: isOpen ? "none" : "grayscale(0.4) brightness(0.55)",
-                  }}
-                />
-                {/* Dark overlay */}
-                <div
-                  className="absolute inset-0 transition-opacity duration-700"
-                  style={{
-                    background: isOpen
-                      ? "linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.55) 65%, rgba(0,0,0,0.85) 100%)"
-                      : "linear-gradient(180deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.9) 100%)",
+                    opacity: isOpen ? 1 : 0.85,
                   }}
                 />
 
