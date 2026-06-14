@@ -295,26 +295,19 @@ const KpiStripSection = () => {
 
 /* ===================== INTELLIGENCE ACROSS THE ENTIRE VALUE CHAIN ===================== */
 const ValueChainSection = () => {
-  const C = {
-    yellow: "#FFC61A",
-    cyan: "#00FFFF",
-    green: "#00F891",
-    purple: "#B336F6",
-    teal: "#19D3D6",
-  };
   const bars = [
-    { l: "AI for Manufacturing", v: 98, c: C.yellow },
-    { l: "Industrial Data Engineering", v: 92, c: C.cyan },
-    { l: "Supply Chain Intelligence", v: 85, c: C.green },
-    { l: "Digital Factory Analytics", v: 90, c: C.purple },
+    { l: "AI for Manufacturing", v: 98 },
+    { l: "Industrial Data Engineering", v: 92 },
+    { l: "Supply Chain Intelligence", v: 85 },
+    { l: "Digital Factory Analytics", v: 90 },
   ];
   const chartBars = [62, 68, 75, 70, 80, 85, 96];
   const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
   const legend = [
-    { c: C.yellow, l: "Surface Defects", v: "42%" },
-    { c: C.cyan, l: "Dimensional Errors", v: "28%" },
-    { c: C.green, l: "Assembly Misalign", v: "18%" },
-    { c: C.purple, l: "Label / Barcode", v: "12%" },
+    { l: "Surface Defects", v: "42%" },
+    { l: "Dimensional Errors", v: "28%" },
+    { l: "Assembly Misalign", v: "18%" },
+    { l: "Label / Barcode", v: "12%" },
   ];
   return (
     <section className="py-12 sm:py-16" style={{ background: "#13171D" }}>
@@ -322,8 +315,8 @@ const ValueChainSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
           <Reveal>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-6 h-px" style={{ background: C.yellow }} />
-              <span className="text-[15px] tracking-[0.2em]" style={{ color: C.yellow }}>What We Deliver</span>
+              <div className="w-6 h-px" style={{ background: "rgba(255,255,255,0.45)" }} />
+              <span className="text-[15px] tracking-[0.2em]" style={{ color: "rgba(255,255,255,0.65)" }}>What We Deliver</span>
             </div>
             <h2 className="text-[26px] sm:text-[32px] md:text-[38px] font-medium leading-tight mb-5 text-white" style={{ fontFamily: GROTESK }}>
               Intelligence Across the
@@ -339,12 +332,12 @@ const ValueChainSection = () => {
                   <div>
                     <div className="flex justify-between text-[16px] mb-2">
                       <span className="text-white">{b.l}</span>
-                      <span style={{ color: b.c, fontFamily: GROTESK }}>{b.v}%</span>
+                      <span style={{ color: "rgba(255,255,255,0.75)", fontFamily: GROTESK }}>{b.v}%</span>
                     </div>
                     <div className="h-[3px] rounded-full overflow-hidden" style={{ background: "rgba(255,255,255,0.08)" }}>
                       <motion.div
                         className="h-full rounded-full"
-                        style={{ background: b.c }}
+                        style={{ background: "rgba(255,255,255,0.55)" }}
                         initial={{ width: 0 }}
                         whileInView={{ width: `${b.v}%` }}
                         viewport={{ once: true }}
@@ -361,7 +354,7 @@ const ValueChainSection = () => {
             <div className="rounded-xl p-6" style={{ background: "#0A0D0A", border: "1.5px solid #1D201D" }}>
               <div className="flex items-center justify-between mb-5">
                 <div className="text-white text-[16px] font-medium" style={{ fontFamily: GROTESK }}>Weekly Inspection Throughput</div>
-                <div className="text-[15px]" style={{ color: C.yellow, fontFamily: GROTESK }}>↑ 18% MoM</div>
+                <div className="text-[15px]" style={{ color: "rgba(255,255,255,0.65)", fontFamily: GROTESK }}>↑ 18% MoM</div>
               </div>
               <div className="flex items-end gap-2 h-40 mb-3">
                 {chartBars.map((h, i) => (
@@ -372,7 +365,7 @@ const ValueChainSection = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.7, delay: i * 0.06, ease: [0.22, 1, 0.36, 1] }}
                     className="flex-1 rounded-t-sm"
-                    style={{ background: i === chartBars.length - 1 ? C.teal : "rgba(25,211,214,0.25)" }}
+                    style={{ background: i === chartBars.length - 1 ? "rgba(255,255,255,0.65)" : "rgba(255,255,255,0.18)" }}
                   />
                 ))}
               </div>
@@ -388,15 +381,15 @@ const ValueChainSection = () => {
                   >
                     <div className="flex items-center justify-between gap-2 text-[15px] mb-1.5">
                       <div className="flex items-center gap-2">
-                        <span className="w-1.5 h-1.5 rounded-full" style={{ background: l.c }} />
+                        <span className="w-1.5 h-1.5 rounded-full" style={{ background: "rgba(255,255,255,0.55)" }} />
                         <span className="text-white">{l.l}</span>
                       </div>
-                      <span style={{ color: l.c, fontFamily: GROTESK }}>{l.v}</span>
+                      <span style={{ color: "rgba(255,255,255,0.75)", fontFamily: GROTESK }}>{l.v}</span>
                     </div>
                     <div className="h-[2px] rounded-full overflow-hidden" style={{ background: "rgba(255,255,255,0.06)" }}>
                       <motion.div
                         className="h-full rounded-full"
-                        style={{ background: l.c }}
+                        style={{ background: "rgba(255,255,255,0.45)" }}
                         initial={{ width: 0 }}
                         whileInView={{ width: l.v }}
                         viewport={{ once: true }}
@@ -416,24 +409,17 @@ const ValueChainSection = () => {
 
 /* ===================== AGENTS THAT ACT, NOT JUST ALERT ===================== */
 const AgentsSection = () => {
-  const C = {
-    yellow: "#FFC61A",
-    cyan: "#00FFFF",
-    green: "#00F891",
-    purple: "#B336F6",
-    teal: "#19D3D6",
-  };
   const steps = [
-    { l: "Detect", c: C.green },
-    { l: "Analyse", c: C.green },
-    { l: "Decide", c: C.yellow },
-    { l: "Execute", c: C.green },
+    { l: "Detect" },
+    { l: "Analyse" },
+    { l: "Decide" },
+    { l: "Execute" },
   ];
   const items = [
-    { icon: Eye, t: "Vision Quality Co-Pilot", d: "Root-cause insights and automatic SPC reports.", badge: "Active", c: C.green },
-    { icon: Workflow, t: "Workflow & Decision Agents", d: "Routes non-conforming parts and escalates anomalies.", badge: "Active", c: C.green },
-    { icon: BookOpenCheck, t: "Self-Improving Playbooks", d: "Refines thresholds from quality engineer feedback.", badge: "Learning", c: C.cyan },
-    { icon: GitBranch, t: "Closed Loop SIF", d: "Pushes corrective commands directly to machines.", badge: "Connected", c: C.green },
+    { icon: Eye, t: "Vision Quality Co-Pilot", d: "Root-cause insights and automatic SPC reports.", badge: "Active" },
+    { icon: Workflow, t: "Workflow & Decision Agents", d: "Routes non-conforming parts and escalates anomalies.", badge: "Active" },
+    { icon: BookOpenCheck, t: "Self-Improving Playbooks", d: "Refines thresholds from quality engineer feedback.", badge: "Learning" },
+    { icon: GitBranch, t: "Closed Loop SIF", d: "Pushes corrective commands directly to machines.", badge: "Connected" },
   ];
   return (
     <section className="py-12 sm:py-16" style={{ background: "#000000" }}>
@@ -441,8 +427,8 @@ const AgentsSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-10 lg:gap-12 items-start">
           <Reveal>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-6 h-px" style={{ background: C.green }} />
-              <span className="text-[15px] tracking-[0.2em]" style={{ color: C.green }}>AI Agent Quality</span>
+              <div className="w-6 h-px" style={{ background: "rgba(255,255,255,0.45)" }} />
+              <span className="text-[15px] tracking-[0.2em]" style={{ color: "rgba(255,255,255,0.65)" }}>AI Agent Quality</span>
             </div>
             <h2 className="text-[26px] sm:text-[32px] md:text-[38px] font-medium leading-tight mb-5 text-white" style={{ fontFamily: GROTESK }}>
               Agents That Act,
@@ -460,8 +446,8 @@ const AgentsSection = () => {
                     className="px-4 py-2 rounded-md text-[15px]"
                     style={{
                       background: "#0A0D0A",
-                      border: `1px solid ${s.c}`,
-                      color: s.c,
+                      border: "1px solid rgba(255,255,255,0.18)",
+                      color: "rgba(255,255,255,0.85)",
                       fontFamily: GROTESK,
                     }}
                   >
@@ -487,7 +473,7 @@ const AgentsSection = () => {
                   >
                     <div className="flex gap-4 items-center min-w-0">
                       <div className="w-10 h-10 flex items-center justify-center shrink-0">
-                        <Icon className="w-5 h-5" style={{ color: it.c }} strokeWidth={1.5} />
+                        <Icon className="w-5 h-5" style={{ color: "rgba(255,255,255,0.65)" }} strokeWidth={1.5} />
                       </div>
                       <div className="min-w-0">
                         <h4 className="text-white text-[16px] font-medium" style={{ fontFamily: GROTESK }}>{it.t}</h4>
@@ -498,8 +484,8 @@ const AgentsSection = () => {
                       className="shrink-0 px-3 py-1 rounded-full text-[14px]"
                       style={{
                         background: "transparent",
-                        border: `1px solid ${it.c}`,
-                        color: it.c,
+                        border: "1px solid rgba(255,255,255,0.22)",
+                        color: "rgba(255,255,255,0.75)",
                         fontFamily: GROTESK,
                       }}
                     >
